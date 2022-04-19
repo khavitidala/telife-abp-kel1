@@ -12,6 +12,26 @@ class AkunController extends Controller
         return view('beranda');
     }
 
+    public function feedback() {
+        return view('contact');
+    }
+
+    public function about() {
+        return view('about');
+    }
+
+    public function profile() {
+        return view('profile');
+    }
+
+    public function chat() {
+        return view('chat');
+    }
+
+    public function faq() {
+        return view('faq');
+    }
+
     public function index(){
         
         return view('login');
