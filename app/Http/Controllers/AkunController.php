@@ -45,11 +45,9 @@ class AkunController extends Controller
     public function loginPost(Request $request){
         $username = $request->username;
         $password = $request->password;
-        $data = Akun::where('username',$username)->first();
-        error_log('masukk');
+        $data = Akun::where('username','=',$username)->first();
         if($data){ 
-            if(strcmp($password,$data->password)){
-                Session::put('name',$data->name);
+            if(strcmp($password,$data->password)==0){
                 Session::put('akun_id',$data->akun_id);
                 Session::put('is_konselor',$data->is_konselor);
                 Session::put('is_admin',$data->is_admin);
@@ -61,13 +59,12 @@ class AkunController extends Controller
                 } else {
                     return redirect('profile_pasien');
                 }
+                return redirect('admin');
                 
-            }
-            else{
+        } else {
                 return redirect('login')->with('alert','Email atau Password anda salah!');
             }
-        }
-        else{
+        } else {
             return redirect('login')->with('alert','Email atau Password anda salah!');
         }
     }
