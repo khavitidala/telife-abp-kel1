@@ -26,8 +26,8 @@ Route::get('/feedback',"App\Http\Controllers\FeedbackController@index")->name("f
 Route::post('/feedback',"App\Http\Controllers\FeedbackController@store")->name("storefeedback");
 Route::get('/profile_pasien',"App\Http\Controllers\PasienController@index")->name("profile_pasien");
 Route::get('/profile_konselor',"App\Http\Controllers\KonselorController@index")->name("profile_konselor");
-Route::get('/profile_pasien/create',"App\Http\Controllers\PasienController@create_pasien")->name("create_profile_pasien");
-Route::get('/profile_konselor/create',"App\Http\Controllers\KonselorController@create_konselor")->name("create_profile_konselor");
+Route::get('/profile_pasien/create',"App\Http\Controllers\AdminController@create_pasien")->name("create_profile_pasien");
+Route::get('/profile_konselor/create',"App\Http\Controllers\AdminController@create_konselor")->name("create_profile_konselor");
 Route::post('/profile_pasien',"App\Http\Controllers\AdminController@store_pasien")->name("store_profile_pasien");
 Route::post('/profile_konselor',"App\Http\Controllers\AdminController@store_konselor")->name("store_profile_konselor");
 Route::delete('/profile_pasien/{id}',"App\Http\Controllers\AdminController@destroy_pasien")->name("destroy_profile_pasien");
