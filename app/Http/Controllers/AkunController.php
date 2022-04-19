@@ -26,11 +26,13 @@ class AkunController extends Controller
         $username = $request->username;
         $password = $request->password;
         $data = Akun::where('username',$username)->first();
+        error_log('masukk');
         if($data){ 
             if(strcmp($password,$data->password)){
                 Session::put('name',$data->name);
                 Session::put('akun_id',$data->akun_id);
                 Session::put('is_konselor',$data->is_konselor);
+                Session::put('is_admin',$data->is_admin);
                 Session::put('login',TRUE);
                 if($data->is_konselor){
                     return redirect('profile_konselor');
