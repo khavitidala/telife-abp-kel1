@@ -59,7 +59,6 @@ class AdminController extends Controller
         $ksr = new Pasien;
         $ksr->akun_id = $request->akun_id; 
         $ksr->nama = $request->nama;
-        $ksr->nomor_induk = $request->date_employee;
         $ksr->nomor_induk = $request->nomor_induk;
         $ksr->tgl_lahir = $request->tgl_lahir;
         $ksr->alamat_tinggal = $request->alamat_tinggal;
