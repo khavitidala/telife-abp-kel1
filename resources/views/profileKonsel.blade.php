@@ -37,40 +37,28 @@
             <div class="row justify-content-center" style="margin-top:5%">
                 <div class="col-3">
                     <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Profile User</h1>
+                        <h1 class="fw-bolder">Profile Konselor</h1>
                     </div>
 
                     <form class="border" style="padding:20px" method="POST" action="/">
                     @csrf
                     <input type="hidden" name="_method" value="" />
-                    <div class="form-group">
-                        <label>Nama Lengkap</label>
-                        <input type="text" name="name" class="form-control" value="" />
-                    </div>
-                    <div class="form-group">
-                        <label>Nomor induk</label>
-                        <input type="number" name="price" class="form-control" value="" />
-                    </div>
-                    <div class="form-group">
-                        <label>Tanggal Lahir</label>
-                        <input type="text" name="name" class="form-control" value="" />
-                    </div>
-                    <div class="form-group">
-                        <label>alamat tinggal</label>
-                        <input type="number" name="price" class="form-control" value="" />
-                    </div>
-                    <div class="form-group">
-                        <label>alamat kirim</label>
-                        <input type="number" name="price" class="form-control" value="" />
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="name" class="form-control" value="" />
-                    </div>
-                    <div class="form-group">
-                        <label>nomor HP</label>
-                        <input type="number" name="price" class="form-control" value="" />
-                    </div>
+                        <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" name="name" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label>tanggal mulai bekerja</label>
+                            <input type="text" name="price" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label>nomor induk</label>
+                            <input type="date" name="name" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label>tipe</label>
+                            <input type="number" name="price" class="form-control" value="" />
+                        </div>
                     </form>
                 </div>
             </div>

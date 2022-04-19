@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>TELIFE</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/favicon.ico') }}" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -23,18 +23,18 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">TELIFE</a>
+                    <a class="navbar-brand" href="index">TELIFE</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
-                            <li class="nav-item"><a class="nav-link" href="chat.html">Konselor</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index">Beranda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about">Tentang Kami</a></li>
+                            <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                         </ul>
                     </div>
-                    <a href="login.html" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Sign In</a>
+                    <a href="login" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Sign In</a>
                 </div>
             </nav>
             <!-- Page Content-->
@@ -77,6 +77,11 @@
                                             <div class="chat-about">
                                                 <h6 class="m-b-0">Aiden Chavez</h6>
                                                 <small>Last seen: 2 hours ago</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="d-flex align-items-end flex-column bd-highlight mb-3">
+                                                <a class="btn btn-primary btn-sm px-4 me-sm-3" href="consulRecord" style="margin-bottom: 1rem;">Record Consultation</a>
                                             </div>
                                         </div>
                                     </div>
