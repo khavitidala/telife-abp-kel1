@@ -18,18 +18,18 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">TELIFE</a>
+                    <a class="navbar-brand" href="/">TELIFE</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
-                            <li class="nav-item"><a class="nav-link" href="chat.html">Konselor</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about">Tentang Kami</a></li>
+                            <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
                         </ul>
                     </div>
-                    <a href="login.html" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Sign In</a>
+                    <a href="login" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Sign In</a>
                 </div>
             </nav>
             <!-- Page content-->

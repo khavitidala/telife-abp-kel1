@@ -19,15 +19,15 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">TELIFE</a>
+                    <a class="navbar-brand" href="/">TELIFE</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Tentang Kami</a></li>
-                            <li class="nav-item"><a class="nav-link" href="chat.html">Konselor</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Feedback</a></li>
-                            <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about">Tentang Kami</a></li>
+                            <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Feedback</a></li>
+                            <li class="nav-item"><a class="nav-link" href="profile">Profile</a></li>
                         </ul>
                     </div>
                     <a href="login" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Sign In</a>
@@ -42,7 +42,7 @@
                                 <h1 class="display-5 fw-bolder text-white mb-2">Solusi Terbaik untuk masalahmu</h1>
                                 <p class="lead fw-normal text-white-50 mb-4">Butuh ruang aman dan nyaman untuk bercerita? Psikolog profesional siap membantu selesaikan berbagai masalahmu. Cepat, tepat, dan bersahabat. </p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="chat.html">konsul sekarang</a>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="chat">konsul sekarang</a>
                                     <!-- <a class="btn btn-outline-light btn-lg px-4" href="#features">fitur lainnya</a> -->
                                 </div>
                             </div>
