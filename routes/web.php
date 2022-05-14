@@ -30,8 +30,8 @@ Route::get('/profile_pasien/create',"App\Http\Controllers\AdminController@create
 Route::get('/profile_konselor/create',"App\Http\Controllers\AdminController@create_konselor")->name("create_profile_konselor");
 Route::post('/profile_pasien',"App\Http\Controllers\AdminController@store_pasien")->name("store_profile_pasien");
 Route::post('/profile_konselor',"App\Http\Controllers\AdminController@store_konselor")->name("store_profile_konselor");
-Route::delete('/profile_pasien/{id}',"App\Http\Controllers\AdminController@destroy_pasien")->name("destroy_profile_pasien");
-Route::delete('/profile_konselor/{id}',"App\Http\Controllers\AdminController@destroy_konselor")->name("destroy_profile_konselor");
+Route::delete('/profile_pasien/delete/{id}',"App\Http\Controllers\AdminController@destroy_pasien")->name("destroy_profile_pasien");
+Route::delete('/profile_konselor/delete/{id}',"App\Http\Controllers\AdminController@destroy_konselor")->name("destroy_profile_konselor");
 Route::put('/profile_pasien/{id}',"App\Http\Controllers\PasienController@update")->name("update_pasien");
 Route::put('/profile_konselor/{id}',"App\Http\Controllers\KonselorController@update")->name("update_konselor");
 

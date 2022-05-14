@@ -26,8 +26,8 @@
                 @foreach($konselor as $d)
                 <tr>
                     <td>
-                        <form method="post" action="/profile_konselor/{{ $d->konselor_id }}" style="display:inline"
-                            onsubmit="return confirm('Yakin hapus?')">
+                        <form method="POST" action="/profile_konselor/delete/{{ $d->konselor_id }}" style="display:inline">
+                            <!-- onsubmit="return confirm('Yakin hapus?')"> -->
                             @csrf
                             @method('DELETE')
                             <button class="btn btn-danger">Hapus</button>
@@ -62,8 +62,8 @@
                 @foreach($pasien as $d)
                 <tr>
                     <td>
-                        <form method="post" action="/profile_pasien/{{ $d->pasien_id }}" style="display:inline"
-                            onsubmit="return confirm('Yakin hapus?')">
+                        <form method="POST" action="/profile_pasien/delete/{{ $d->pasien_id }}" style="display:inline">
+                            <!-- onsubmit="return confirm('Yakin hapus?')"> -->
                             @csrf
                             @method('DELETE')
                             <button class="btn btn-danger">Hapus</button>

@@ -14,34 +14,39 @@
       <div class="container">
           <div class="mt-3">
               <h2>Create Pasien</h2>
-            <form>
+            <form method='POST' action="/profile_pasien">
+              @csrf
+            <div class="form-group">
+                    <label for="nama">Akun ID</label>
+                    <input type="text" class="form-control" name="akun_id">
+                </div>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="nama">
+                    <input type="text" class="form-control" name="nama">
                 </div>
                 <div class="form-group">
                     <label for="nomor_induk">Nomor Induk</label>
-                    <input type="text" class="form-control" id="nomor_induk">
+                    <input type="text" class="form-control" name="nomor_induk">
                 </div>
                 <div class="form-group">
                     <label for="tgl_lahir">Tanggal Lahir (HH/BB/TTTT)</label>
-                    <input type="text" class="form-control" id="tgl_lahir">
+                    <input type="text" class="form-control" name="tgl_lahir">
                 </div>
                 <div class="form-group">
                     <label for="alamat_tinggal">Alamat</label>
-                    <input type="text" class="form-control" id="alamat_tinggal">
+                    <input type="text" class="form-control" name="alamat_tinggal">
                 </div>
                 <div class="form-group">
                   <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email">
+                  <input type="email" class="form-control" name="email">
                 </div>
                 <div class="form-group">
                     <label for="nomor_hp">No. HP</label>
-                    <input type="text" class="form-control" id="nomor_hp">
+                    <input type="text" class="form-control" name="no_hp">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
-              <a href="admin"><button class="btn btn-secondary mt-2">Back</button></a>
+              <a href="/admin"><button class="btn btn-secondary mt-2">Back</button></a>
           </div>
       </div>
     
