@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/',"App\Http\Controllers\AkunController@beranda")->name("beranda");
 Route::get('/login',"App\Http\Controllers\AkunController@index")->name("login");
+Route::get('/register',"App\Http\Controllers\AkunController@register")->name("register");
 Route::get('/about',"App\Http\Controllers\AkunController@about")->name("about");
 Route::get('/contact',"App\Http\Controllers\AkunController@feedback")->name("feedback");
 Route::get('/chat',"App\Http\Controllers\AkunController@chat")->name("chat");

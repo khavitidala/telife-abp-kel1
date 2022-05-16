@@ -32,6 +32,10 @@ class AkunController extends Controller
         return view('faq');
     }
 
+    public function register() {
+        return view('register');
+    }
+
     public function index(){
         
         return view('login');
