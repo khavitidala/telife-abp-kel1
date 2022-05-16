@@ -63,6 +63,9 @@
                                     <!-- Submit Button-->
                                     <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                                 </form>
+                                <div class="text-center fs-6" style="margin-top: 10px;">
+                                    Doesn't have an Account? <a href="register.html">Register</a>
+                                </div>
                             </div>
                         </div>
                     </div>
