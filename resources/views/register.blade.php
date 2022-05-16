@@ -40,8 +40,8 @@
                         <div class="text-center mb-5">
                             <!-- <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div> -->
                             <a href="#" class="logo me-auto"><img src="assets/img/Telkom_University_Logo.png" alt=""></a>
-                            <h1 class="fw-bolder">Login</h1>
-                            <p class="lead fw-normal text-muted mb-0">Single Account, Single Sign On Login</p>
+                            <h1 class="fw-bolder">Sign Up</h1>
+                            <p class="lead fw-normal text-muted mb-0">Please fill up this form</p>
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
@@ -53,10 +53,22 @@
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
                                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                     <!-- nama input-->
+                                     <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="name">Full Name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">Nama tidak boleh kosong</div>
+                                    </div>
+                                    <!-- NIM input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <label for="email">Nomor Induk Mahasiswa</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">Nomor Induk Mahasiswa tidak boleh kosong.</div>
+                                    </div>
                                     <!-- SSO Username input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <label for="name">SSO Username</label>
+                                        <label for="name">Username</label>
                                         <div class="invalid-feedback" data-sb-feedback="name:required">Username is required.</div>
                                     </div>
                                     <!-- Password input-->
@@ -64,7 +76,7 @@
                                         <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                         <label for="email">Password</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">Password is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Password is not valid.</div>
+                                        <!-- <div class="invalid-feedback" data-sb-feedback="email:email">Password is not valid.</div> -->
                                     </div>
                                     <!-- Submit success message-->
                                     <!---->
@@ -86,9 +98,6 @@
                                     <!-- Submit Button-->
                                     <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
                                 </form>
-                                <div class="text-center fs-6" style="margin-top: 10px;">
-                                    Doesn't have an Account? <a href="register.html">Register</a>
-                                </div>
                             </div>
                         </div>
                     </div>
