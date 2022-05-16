@@ -4,14 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pasien;
+use Illuminate\Support\Facades\Session;
 
 class PasienController extends Controller
 {
     public function index()
     {
         $data = Pasien::where('akun_id', Session::get('akun_id'))->first();
-        $id = $data->$pasien_id;
-        return view('product.form', [
+        $id = $data->pasien_id;
+        return view('profile', [
             'title' => 'Edit',
             'method' => 'PUT',
             'action' => "profile_pasien/$id",
