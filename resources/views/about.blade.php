@@ -38,9 +38,9 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-xxl-6">
                             <div class="text-center my-5">
-                                <h1 class="fw-bolder mb-3">Lorem ipsum dolor sit amet</h1>
-                                <p class="lead fw-normal text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                <a class="btn btn-primary btn-lg" href="#scroll-target">Read our story</a>
+                                <h1 class="fw-bolder mb-3">Mengelola data medis untuk konselor dan pasien</h1>
+                                <p class="lead fw-normal text-muted mb-4">Kami menyediakan fitur penyimpanan database untuk menyimpan dan mengelola data medis untuk dilihat oleh pihak yang berkepentingan. Seperti konselor dan pasien untuk urusan kesehatan</p>
+                                <a class="btn btn-primary btn-lg" href="#scroll-target">Cerita Kami</a>
                             </div>
                         </div>
                     </div>
@@ -52,8 +52,8 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
                         <div class="col-lg-6">
-                            <h2 class="fw-bolder">Our founding</h2>
-                            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
+                            <h2 class="fw-bolder">Yang Berawal dari...</h2>
+                            <p class="lead fw-normal text-muted mb-0">Ide pertama dibuatnya Telife adalah untuk ketentuan persyaratan nilai pada mata kuliah Aplikasi berbasis platform. Selain itu, tujuan kami dalam membangun website Telife ini untuk memudahkan konselor maupun pasien untuk dapat mengakses data kesehatan masing-masing secara online</p>
                         </div>
                     </div>
                 </div>
@@ -64,8 +64,8 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
                         <div class="col-lg-6">
-                            <h2 class="fw-bolder">Growth &amp; beyond</h2>
-                            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
+                            <h2 class="fw-bolder">Apa yang kami lakukan kedepannya</h2>
+                            <p class="lead fw-normal text-muted mb-0">Tentunya setelah tidak dipungkiri bahwa kedepannya kami mungkin akan mengembangkan Telife dengan menghadirkan beberapa fitur tambahan lainnya untuk terus mendukung operasional dari fasilitas Telkom medica kedepannya</p>
                         </div>
                     </div>
                 </div>
@@ -74,36 +74,43 @@
             <section class="py-5 bg-light">
                 <div class="container px-5 my-5">
                     <div class="text-center">
-                        <h2 class="fw-bolder">Our team</h2>
-                        <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>
+                        <h2 class="fw-bolder">Tim Kami</h2>
+                        <p class="lead fw-normal text-muted mb-5">Kelompok 1 yang beranggotakan:</p>
                     </div>
                     <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
                         <div class="col mb-5 mb-5 mb-xl-0">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                <div class="fst-italic text-muted">Founder &amp; CEO</div>
+                                <h5 class="fw-bolder">Ryan Abdurrahman</h5>
+                                <div class="fst-italic text-muted">Backend Developer</div>
                             </div>
                         </div>
                         <div class="col mb-5 mb-5 mb-xl-0">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Arden Vasek</h5>
-                                <div class="fst-italic text-muted">CFO</div>
+                                <h5 class="fw-bolder">Muhammad Faiz Abdurrahman djauhar</h5>
+                                <div class="fst-italic text-muted">Backend Developer</div>
                             </div>
                         </div>
                         <div class="col mb-5 mb-5 mb-sm-0">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Toribio Nerthus</h5>
-                                <div class="fst-italic text-muted">Operations Manager</div>
+                                <h5 class="fw-bolder">Azriel Naufal Aulia</h5>
+                                <div class="fst-italic text-muted">Front End Developer</div>
                             </div>
                         </div>
                         <div class="col mb-5">
                             <div class="text-center">
                                 <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Malvina Cilla</h5>
-                                <div class="fst-italic text-muted">CTO</div>
+                                <h5 class="fw-bolder">Abrian Satria Hananda</h5>
+                                <div class="fst-italic text-muted">Front End Developer</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Muhammad Adam Firjatullah</h5>
+                                <div class="fst-italic text-muted">Front End Developer</div>
                             </div>
                         </div>
                     </div>
