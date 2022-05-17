@@ -32,70 +32,47 @@
                     <a href="login" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Sign In</a>
                 </div>
             </nav>
-<!-- Page Content-->
-<section>
+            <!-- Page Content-->
+            <section>
             <div class="row justify-content-center" style="margin-top:5%">
                 <div class="col-3">
                     <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Health Record</h1>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="container mt-4">
-            <div class="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Data Medical Record
-                        </button>
-                    </h5>
+                        <h1 class="fw-bolder">Profile</h1>
                     </div>
 
-                    <div id="collapseOne" class="collapse panel-collapse" >
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Medical Record</h3>
-                                <span class="float-left">{{ session('msg') }}</span>
-                                <a href="/consulRecord/create" class="btn btn-primary">Tambah Record</a><br /><br />
-                                <table class="table table-bordered table-striped table-hover">
-                                    <tr>
-                                        <th>Hapus</th>
-                                        <th>Nama</th>
-                                        <th>NIM</th>
-                                        <th>Diagnosa</th>
-                                        <th>treatment</th>
-                                        <th>Resep Obat</th>
-                                        <th>dibuat Tanggal</th>
-                                    </tr>
-                                        
-                                    <!-- @foreach($konselor as $d)
-                                        <tr>
-                                            <td>
-                                                <form method="POST" action="/profile_konselor/delete/{{ $d->konselor_id }}" style="display:inline">
-                                                    onsubmit="return confirm('Yakin hapus?')">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button class="btn btn-danger">Hapus</button>
-                                                </form>
-                                            </td>
-                                            
-                                            <td>{{ $d->akun_id }}</td>
-                                            <td>{{ $d->nama }}</td>
-                                            <td>{{ $d->date_employee }}</td>
-                                            <td>{{ $d->nomor_induk }}</td>
-                                            <td>{{ $d->tipe }}</td>
-                                        </tr>
-                                    @endforeach -->
-                                </table>
-                            </div>
+                    <form class="border" style="padding:20px" method="POST" action="/consulRecord">
+                        @csrf
+                        <input type="hidden" name="_method" value="" />
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input type="text" name="name" class="form-control" value="" />
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label>NIM</label>
+                            <input type="number" name="price" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label>Diagnosa</label>
+                            <input type="text" name="name" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label>treatment</label>
+                            <input type="number" name="price" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label>Resep Obat</label>
+                            <input type="text" name="name" class="form-control" value="" />
+                        </div>
+                        <div class="form-group">
+                            <label>Dibuat tanggal</label>
+                            <input type="text" name="name" class="form-control" value="" />
+                        </div>
+                        <div class="form-group" style="text-align: center; margin-top: 1rem;">
+                            <a href="consulRecord" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span>Kembali</a>
+                        </div>
+                    </form>
                 </div>
             </div>
-            </div>
-            <!--  -->           
             </section>
         </main>
         <!-- Footer-->

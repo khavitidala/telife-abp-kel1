@@ -118,7 +118,7 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
                             <li class="nav-item"><a class="nav-link" href="about">Tentang Kami</a></li>
-                            <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="contact">Feedback</a></li>
                             <li class="nav-item"><a class="nav-link" href="profile">Profile</a></li>
                         </ul>
