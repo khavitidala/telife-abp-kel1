@@ -32,8 +32,32 @@ class AkunController extends Controller
         return view('faq');
     }
 
-    public function register() {
-        return view('register');
+    public function register()
+    {
+        return view('register', [
+            'title' => 'Tambah',
+            'method' => 'POST',
+            'action' => "register",
+            ]);            
+    }
+
+    public function store_akun(Request $request)
+    {
+        $ksr = new Akun;
+        $ksr->akun_id = $request->akun_id; 
+        $ksr->username = $request->username;
+        $ksr->password = $request->password;
+        $ksr->is_admin = 0;
+        $ksr->is_konselor = 0;
+        $ksr->save();
+
+        $pas = new Pasien;
+        $pas->akun_id = $request->akun_id; 
+        $pas->nama = $request->nama;
+        $pas->nomor_induk = $request->nomor_induk;
+        $pas->save();
+
+        return redirect('login')->with('msg', 'Tambah akun berhasil');
     }
 
     public function index(){

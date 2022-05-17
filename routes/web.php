@@ -20,6 +20,7 @@ Route::get('/contact',"App\Http\Controllers\AkunController@feedback")->name("fee
 Route::get('/chat',"App\Http\Controllers\AkunController@chat")->name("chat");
 Route::get('/faq',"App\Http\Controllers\AkunController@about")->name("faq");
 Route::get('/profile',"App\Http\Controllers\AkunController@profile")->name("profile");
+Route::post('/login',"App\Http\Controllers\AkunController@store_akun")->name("store_akun");
 Route::post('/loginpost',"App\Http\Controllers\AkunController@loginPost")->name("loginpost");
 Route::get('/logout',"App\Http\Controllers\AkunController@logout")->name("logout");
 Route::get('/admin',"App\Http\Controllers\AdminController@index")->name("admin");

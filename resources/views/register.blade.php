@@ -52,30 +52,31 @@
                                 <!-- To make this form functional, sign up at-->
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <form method="POST" action="login">
+                                    @csrf
                                      <!-- nama input-->
                                      <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <label for="name">Full Name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">Nama tidak boleh kosong</div>
+                                        <input class="form-control" id="nama" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="nama">Full Name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="nama:required">Nama tidak boleh kosong</div>
                                     </div>
                                     <!-- NIM input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                        <label for="email">Nomor Induk Mahasiswa</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">Nomor Induk Mahasiswa tidak boleh kosong.</div>
+                                        <input class="form-control" id="nomor_induk" type="text" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <label for="nomor_induk">Nomor Induk Mahasiswa</label>
+                                        <div class="invalid-feedback" data-sb-feedback="nomor_induk:required">Nomor Induk Mahasiswa tidak boleh kosong.</div>
                                     </div>
                                     <!-- SSO Username input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <label for="name">Username</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">Username is required.</div>
+                                        <input class="form-control" id="username" type="text" placeholder="Username" data-sb-validations="required" />
+                                        <label for="username">Username</label>
+                                        <div class="invalid-feedback" data-sb-feedback="username:required">Username is required.</div>
                                     </div>
                                     <!-- Password input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                        <label for="email">Password</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">Password is required.</div>
+                                        <input class="form-control" id="password" type="password" placeholder="Password" data-sb-validations="required,email" />
+                                        <label for="password">Password</label>
+                                        <div class="invalid-feedback" data-sb-feedback="password:required">Password is required.</div>
                                         <!-- <div class="invalid-feedback" data-sb-feedback="email:email">Password is not valid.</div> -->
                                     </div>
                                     <!-- Submit success message-->
@@ -96,7 +97,7 @@
                                     <!-- an error submitting the form-->
                                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                                 </form>
                             </div>
                         </div>
