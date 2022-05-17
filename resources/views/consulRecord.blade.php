@@ -12,6 +12,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -24,16 +30,15 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
                             <li class="nav-item"><a class="nav-link" href="about">Tentang Kami</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="contact">Feedback</a></li>
                             <li class="nav-item"><a class="nav-link" href="profile">Profile</a></li>
                         </ul>
                     </div>
-                    <a href="login" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Sign In</a>
+                    <a href="logout" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span>Logout</a>
                 </div>
             </nav>
-<!-- Page Content-->
-<section>
+    <!-- Page Content-->
+    <section>
             <div class="row justify-content-center" style="margin-top:5%">
                 <div class="col-3">
                     <div class="text-center mb-5">
@@ -43,7 +48,7 @@
             </div>
             <!--  -->
             <div class="container mt-4">
-            <div class="accordion">
+            <div id="accordion">
                 <div class="card">
                     <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
@@ -61,33 +66,20 @@
                                 <a href="/consulRecord/create" class="btn btn-primary">Tambah Record</a><br /><br />
                                 <table class="table table-bordered table-striped table-hover">
                                     <tr>
-                                        <th>Hapus</th>
-                                        <th>Nama</th>
                                         <th>NIM</th>
                                         <th>Diagnosa</th>
                                         <th>treatment</th>
-                                        <th>Resep Obat</th>
                                         <th>dibuat Tanggal</th>
                                     </tr>
                                         
-                                    <!-- @foreach($konselor as $d)
+                                    @foreach($record as $d)
                                         <tr>
-                                            <td>
-                                                <form method="POST" action="/profile_konselor/delete/{{ $d->konselor_id }}" style="display:inline">
-                                                    onsubmit="return confirm('Yakin hapus?')">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button class="btn btn-danger">Hapus</button>
-                                                </form>
-                                            </td>
-                                            
-                                            <td>{{ $d->akun_id }}</td>
-                                            <td>{{ $d->nama }}</td>
-                                            <td>{{ $d->date_employee }}</td>
-                                            <td>{{ $d->nomor_induk }}</td>
-                                            <td>{{ $d->tipe }}</td>
+                                            <td>{{ $d->nomor_induk_pasien }}</td>
+                                            <td>{{ $d->diagnosa }}</td>
+                                            <td>{{ $d->treatment }}</td>
+                                            <td>{{ $d->created_at }}</td>
                                         </tr>
-                                    @endforeach -->
+                                    @endforeach
                                 </table>
                             </div>
                         </div>

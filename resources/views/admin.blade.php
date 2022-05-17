@@ -25,7 +25,7 @@
                     <a class="nav-link active" aria-current="page" href="/admin">Dashboard</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:red">Logout</a>
+                    <a class="nav-link" href="logout" style="color:red">Logout</a>
                   </li>
                 </ul>
             </div>

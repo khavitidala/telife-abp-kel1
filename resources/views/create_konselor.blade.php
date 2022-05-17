@@ -31,23 +31,23 @@
       <div class="container">
           <div class="mt-3">
               <h2>Create Konselor</h2>
-            <form method="post" action="admin">
+            <form method="post" action="{{ url('/profile_konselor') }}">
               @csrf
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="nama">
+                    <input type="text" class="form-control" id="nama" name="nama">
                 </div>
                 <div class="form-group">
                     <label for="nomor_induk">Nomor Induk</label>
-                    <input type="text" class="form-control" id="nomor_induk">
+                    <input type="text" class="form-control" id="nomor_induk" name="nomor_induk">
                 </div>
                 <div class="form-group">
                     <label for="date_employee">Date Employee (HH/BB/TTTT)</label>
-                    <input type="text" class="form-control" id="date_employee">
+                    <input type="text" class="form-control" id="date_employee" name="date_employee">
                 </div>
                 <div class="form-group">
                     <label for="tipe">Tipe</label>
-                    <select class="form-control" id="tipe">
+                    <select class="form-control" id="tipe" name="tipe">
                       <option value="krisis">Krisis</option>
                       <option value="fasilitatif">Fasilitatif</option>
                       <option value="preventif">Preventif</option>

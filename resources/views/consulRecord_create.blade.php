@@ -24,51 +24,38 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
                             <li class="nav-item"><a class="nav-link" href="about">Tentang Kami</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="contact">Feedback</a></li>
                             <li class="nav-item"><a class="nav-link" href="profile">Profile</a></li>
                         </ul>
                     </div>
-                    <a href="login" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Sign In</a>
+                    <a href="{{ url('logout') }}" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span>Logout</a>
                 </div>
             </nav>
             <!-- Page Content-->
             <section>
             <div class="row justify-content-center" style="margin-top:5%">
-                <div class="col-3">
+                <div class="col-4">
                     <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Profile</h1>
+                        <h1 class="fw-bolder">Add Medical Record</h1>
                     </div>
 
-                    <form class="border" style="padding:20px" method="POST" action="/consulRecord">
+                    <form class="border" style="padding:20px" method="POST" action="{{ url('/consulRecord') }}">
                         @csrf
                         <input type="hidden" name="_method" value="" />
                         <div class="form-group">
-                            <label>Nama</label>
-                            <input type="text" name="name" class="form-control" value="" />
-                        </div>
-                        <div class="form-group">
                             <label>NIM</label>
-                            <input type="number" name="price" class="form-control" value="" />
+                            <input type="number" name="nomor_induk_pasien" class="form-control" value="" />
                         </div>
                         <div class="form-group">
                             <label>Diagnosa</label>
-                            <input type="text" name="name" class="form-control" value="" />
+                            <input type="text" name="diagnosa" class="form-control" value="" />
                         </div>
                         <div class="form-group">
-                            <label>treatment</label>
-                            <input type="number" name="price" class="form-control" value="" />
-                        </div>
-                        <div class="form-group">
-                            <label>Resep Obat</label>
-                            <input type="text" name="name" class="form-control" value="" />
-                        </div>
-                        <div class="form-group">
-                            <label>Dibuat tanggal</label>
-                            <input type="text" name="name" class="form-control" value="" />
+                            <label>Treatment</label>
+                            <input type="text" name="treatment" class="form-control" value="" />
                         </div>
                         <div class="form-group" style="text-align: center; margin-top: 1rem;">
-                            <a href="consulRecord" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span>Kembali</a>
+                            <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                         </div>
                     </form>
                 </div>

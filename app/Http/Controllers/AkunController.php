@@ -22,15 +22,19 @@ class AkunController extends Controller
     }
 
     public function profile() {
-        return view('profile');
+        return redirect('consulRecord');
     }
 
     public function chat() {
-        return view('chat');
+        return redirect('login');
     }
 
     public function faq() {
         return view('faq');
+    }
+
+    public function create_record() {
+        return view('consulRecord_create');
     }
 
     public function register()
@@ -91,11 +95,11 @@ class AkunController extends Controller
                 Session::put('is_admin',$data->is_admin);
                 Session::put('login',TRUE);
                 if($data->is_konselor){
-                    return redirect('profile_konselor');
+                    return redirect('consulRecord');
                 } else if($data->is_admin){
                     return redirect('admin');
                 } else {
-                    return redirect('profile_pasien');
+                    return redirect('consulRecord');
                 }
                 return redirect('admin');
                 
