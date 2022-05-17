@@ -10,5 +10,6 @@ class Pasien extends Model
     use HasFactory;
     protected $table = 'pasien';
     protected $primaryKey = 'pasien_id';
+    protected $guarded = [];
     public $timestamps = false;
 }

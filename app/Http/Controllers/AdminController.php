@@ -54,32 +54,31 @@ class AdminController extends Controller
             ]);            
     }
 
-    public function store_pasien(Request $request, $id)
+    public function store_pasien(Request $request)
     {
         $ksr = new Pasien;
         $ksr->akun_id = $request->akun_id; 
         $ksr->nama = $request->nama;
-        $ksr->nomor_induk = $request->date_employee;
         $ksr->nomor_induk = $request->nomor_induk;
         $ksr->tgl_lahir = $request->tgl_lahir;
         $ksr->alamat_tinggal = $request->alamat_tinggal;
         $ksr->email = $request->email;
-        $ksr->nomor_hp = $request->nomor_hp;
+        $ksr->no_hp = $request->no_hp;
         $ksr->save();
         return redirect('admin')->with('msg', 'Tambah Pasien berhasil');
     }
 
     public function destroy_pasien($id)
     {
-        $pas = Pasien::where('pasien_id', '=', $id)->first();
-        Pasien::destroy($pas);
+        $pas = Pasien::findOrFail($id);
+        $pas->delete();
         return redirect('admin')->with('msg', 'Hapus berhasil');
     }
 
     public function destroy_konselor($id)
     {
-        $pas = Konselor::where('konselor_id', '=', $id)->first();
-        Konselor::destroy($pas);
+        $kslr = Konselor::findOrFail($id);
+        $kslr->delete();
         return redirect('admin')->with('msg', 'Hapus berhasil');
     }
 }
