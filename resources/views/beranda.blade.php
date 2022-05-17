@@ -24,7 +24,7 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
                             <li class="nav-item"><a class="nav-link" href="about">Tentang Kami</a></li>
-                            <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="chat">Konselor</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="contact">Feedback</a></li>
                             <li class="nav-item"><a class="nav-link" href="profile">Profile</a></li>
                         </ul>
@@ -38,10 +38,10 @@
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2">Solusi Terbaik untuk masalahmu</h1>
-                                <p class="lead fw-normal text-white-50 mb-4">Butuh ruang aman dan nyaman untuk bercerita? Psikolog profesional siap membantu selesaikan berbagai masalahmu. Cepat, tepat, dan bersahabat. </p>
+                                <h1 class="display-5 fw-bolder text-white mb-2">Telkom Medica Health Record</h1>
+                                <p class="lead fw-normal text-white-50 mb-4">Access Telkom Medica health record with one click</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="chat">konsul sekarang</a>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="consulRecord">store record</a>
                                     <!-- <a class="btn btn-outline-light btn-lg px-4" href="#features">fitur lainnya</a> -->
                                 </div>
                             </div>
