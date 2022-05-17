@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use App\Models\Akun;
+use App\Models\Pasien;
 
 class AkunController extends Controller
 {
@@ -12,7 +13,7 @@ class AkunController extends Controller
         return view('beranda');
     }
 
-    public function feedback() {
+    public function contact() {
         return view('contact');
     }
 
@@ -41,10 +42,19 @@ class AkunController extends Controller
             ]);            
     }
 
+    public function getNews()
+    {
+        $page = rand(1, 5);
+        $url = "http://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=b2d3b1c264c147ae88dba39998c23279&pageSize=3&page=$page";
+        $res = file_get_contents($url);
+        $data = json_decode($res);
+
+        return response()->json($data);
+    }
+
     public function store_akun(Request $request)
     {
         $ksr = new Akun;
-        $ksr->akun_id = $request->akun_id; 
         $ksr->username = $request->username;
         $ksr->password = $request->password;
         $ksr->is_admin = 0;
@@ -52,7 +62,7 @@ class AkunController extends Controller
         $ksr->save();
 
         $pas = new Pasien;
-        $pas->akun_id = $request->akun_id; 
+        $pas->akun_id = $ksr->akun_id; 
         $pas->nama = $request->nama;
         $pas->nomor_induk = $request->nomor_induk;
         $pas->save();
